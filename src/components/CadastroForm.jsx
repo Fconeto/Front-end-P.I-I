@@ -2,13 +2,13 @@ import React from "react";
 import "../assets/styles/login.css";
 import CampoInput from "./CampoInput";
 
-const LoginForm = () => {
+const CadastroForm = () => {
   return (
     <main className="login_container">
       <section className="login_titulo">
-        <h1>LOGIN</h1>
+        <h1>CADASTRE-SE</h1>
         <span>
-          Não tem uma conta? <a>Cadastre-se</a>
+          Já possui uma conta? <a href="/cadastro">Entre</a>
         </span>
       </section>
 
@@ -21,7 +21,6 @@ const LoginForm = () => {
             type="email"
             placeholder="Digite aqui seu e-mail"
             source="/src/assets/images/e-mail.png"
-            required
           />
 
           <label htmlFor="senha">Senha</label>
@@ -31,8 +30,13 @@ const LoginForm = () => {
             type="password"
             placeholder="Digite aqui sua senha"
             source="/src/assets/images/senha.png"
-            required
           />
+
+          <label htmlFor="senha">Senha</label>
+          <select className="input_login">
+            <option>Estudante</option>
+            <option>Professor(a)</option>
+          </select>
 
           <button className="input_login button" type="submit">
             Entrar
@@ -43,4 +47,4 @@ const LoginForm = () => {
   );
 };
 
-export default LoginForm;
+export default CadastroForm;

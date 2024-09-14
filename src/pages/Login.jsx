@@ -4,11 +4,16 @@ import "../assets/styles/login.css";
 
 const Login = () => {
   return (
-    <main className="view_login">
+    <main className="view login">
       <LoginForm />
       <section>
         <img
-          className="login_img_desenho"
+          className="img_logo"
+          src="/src/assets/images/Logo 1.png"
+          alt="Background"
+        />
+        <img
+          className="img_desenho"
           src="/src/assets/images/Desenho.png"
           alt="Background"
         />

@@ -1,0 +1,15 @@
+
+.icon_button {
+    height: 20%;
+}
+
+.lat_nav {
+    height: 100vh;
+    width: 30vw;
+    background: #df3131ff;
+}
+
+.lat_nav > img {
+    display: flex;
+    height: 30vh;
+}
