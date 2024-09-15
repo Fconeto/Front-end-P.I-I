@@ -8,7 +8,7 @@ const LoginForm = () => {
       <section className="login_titulo">
         <h1>LOGIN</h1>
         <span>
-          Não tem uma conta? <a>Cadastre-se</a>
+          Não tem uma conta? <a href="/cadastro">Cadastre-se</a>
         </span>
       </section>
 
@@ -21,6 +21,7 @@ const LoginForm = () => {
             type="email"
             placeholder="Digite aqui seu e-mail"
             source="/src/assets/images/e-mail.png"
+            icon="icon"
             required
           />
 
@@ -31,6 +32,7 @@ const LoginForm = () => {
             type="password"
             placeholder="Digite aqui sua senha"
             source="/src/assets/images/senha.png"
+            icon="icon"
             required
           />
 

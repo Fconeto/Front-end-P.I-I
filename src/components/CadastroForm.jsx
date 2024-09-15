@@ -8,7 +8,7 @@ const CadastroForm = () => {
       <section className="login_titulo">
         <h1>CADASTRE-SE</h1>
         <span>
-          Já possui uma conta? <a href="/cadastro">Entre</a>
+          Já possui uma conta? <a href="/login">Entre</a>
         </span>
       </section>
 
@@ -21,6 +21,8 @@ const CadastroForm = () => {
             type="email"
             placeholder="Digite aqui seu e-mail"
             source="/src/assets/images/e-mail.png"
+            icon="icon"
+            required
           />
 
           <label htmlFor="senha">Senha</label>
@@ -30,9 +32,11 @@ const CadastroForm = () => {
             type="password"
             placeholder="Digite aqui sua senha"
             source="/src/assets/images/senha.png"
+            icon="icon"
+            required
           />
 
-          <label htmlFor="senha">Senha</label>
+          <label htmlFor="senha">Ocupação</label>
           <select className="input_login">
             <option>Estudante</option>
             <option>Professor(a)</option>

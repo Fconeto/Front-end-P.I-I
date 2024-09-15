@@ -1,13 +1,12 @@
 import "../assets/styles/login.css";
 
-const CampoInput = ({ className, name, type, placeholder, source }) => {
+const CampoInput = ({ className, name, type, placeholder, source, icon }) => {
   return (
     <div className={className}>
-      <input name={name} type={type} placeholder={placeholder} required />
-
+      <input name={name} type={type} placeholder={placeholder}/>
       <div>
         <img
-          className="icon"
+          className={icon}
           src={source}
           alt="Background"
         />

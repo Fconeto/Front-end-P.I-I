@@ -1,9 +1,11 @@
-import "../assets/styles/login.css";
+import "../assets/styles/home.css"
 
-const IconButton = ({className, source, texto }) => {
+const IconButton = ({className, source, texto, act }) => {
+
   return (
     <button className={className}>
           <img 
+          className="img_button"
           src={source}
           alt="Background"/>
           <span>{texto}</span>
@@ -12,3 +14,6 @@ const IconButton = ({className, source, texto }) => {
 };
 
 export default IconButton;
+
+
+

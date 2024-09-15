@@ -136,6 +136,7 @@ input:focus-visible {
   align-items: flex-start;
   justify-content: space-between;
   height: 80vh;
+  max-width: 20% + 20vw;
   border-radius: 0 50px 50px 0; 
   background: #f5f0f0;
 }
@@ -143,6 +144,7 @@ input:focus-visible {
 .img_desenho {
   display: flex;
   height: 50vh;
+  width: 100%;
 }
 
 .img_logo {
@@ -150,5 +152,3 @@ input:focus-visible {
   height: 20vh;
 }
 
-.cadastro_img_desenho {
-}
