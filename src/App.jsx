@@ -3,9 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import "./App.css"
 import Login from './pages/Login';
 import Cadastro from './pages/Cadastro';
-import TelaInicial from './pages/TelaInicial';
-import Perfil from './pages/Perfil';
-import MeusEventos from './pages/MeusEventos';
+import TelaInicial from './pages/TelaPrincipal';
 
 const App = () => {
   return (
@@ -15,8 +13,10 @@ const App = () => {
         <Route exact path="/login" element={<Login />} />
         <Route exact path="/cadastro" element={<Cadastro />} />
         <Route exact path="/home" element={<TelaInicial />} />
-        <Route exact path="/perfil" element={<Perfil />} />
-        <Route exact path="/eventos" element={<MeusEventos />} />
+        <Route exact path="/perfil" element={<TelaInicial />} />
+        <Route exact path="/eventos" element={<TelaInicial />} />
+        <Route exact path="/criar" element={<TelaInicial />} />
+
 
 
       </Routes>

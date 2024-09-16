@@ -1,9 +1,29 @@
 import "../assets/styles/modal.css";
 
-const Modal = () => {
+const Modal = ({ modalAtivo, setModalAtivo }) => {
+  const fechar = () => {
+    setModalAtivo(false);
+  };
+
+  const handleClickForaModal = (e) => {
+    if (e.target.id === "modal") {
+      fechar();
+    }
+  };
+
   return (
-    <div className="espaco">
+    <div
+      onClick={handleClickForaModal}
+      id="modal"
+      className={`espaco ${modalAtivo ? "" : "desativado"}`}
+    >
       <section className="modal">
+        <img
+          onClick={fechar}
+          className="seta"
+          src="/src/assets/images/sinal-de-seta-para-baixo-para-navegar.png"
+          alt="Fechar"
+        />
         <h3>Monitoria de Programação Orientada a Objetos</h3>
         <div>
           <h4>Apresentação</h4>

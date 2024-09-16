@@ -1,7 +1,7 @@
 import React from "react";
 import "../assets/styles/home.css";
 import IconButton from "../components/IconButton";
-
+import { Link } from "react-router-dom";
 
 const Lateral = () => {
   return (
@@ -21,17 +21,23 @@ const Lateral = () => {
           className="icon_button"
           source="/src/assets/images/do-utilizador (1).png"
           texto="Perfil"
-          act="perfil"
-
+          act="/perfil"
         />
         <IconButton
           className="icon_button"
           source="/src/assets/images/evento-eleitoral-em-um-calendario-com-o-simbolo-de-estrela (1).png"
           texto="Meus Eventos"
-          act="eventos"
+          act="/eventos"
         />
       </nav>
-      <button>Sair</button>
+      <div>
+        <Link to="/criar">
+          <button className="button_evento">Criar Evento</button>
+        </Link>
+        <Link to="/login">
+          <button className="button_sair">Sair</button>
+        </Link>
+      </div>
     </section>
   );
 };

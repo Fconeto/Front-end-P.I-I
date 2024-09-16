@@ -1,16 +1,23 @@
 import "../assets/styles/login.css";
 
-const CampoInput = ({ className, name, type, placeholder, source, icon }) => {
+const CampoInput = ({
+  className,
+  name,
+  type,
+  placeholder,
+  source,
+  icon,
+  value
+}) => {
   return (
     <div className={className}>
-      <input name={name} type={type} placeholder={placeholder}/>
-      <div>
-        <img
-          className={icon}
-          src={source}
-          alt="Background"
-        />
-      </div>
+      <input
+        onChange={(e) => value(e.target.value)}
+        name={name}
+        type={type}
+        placeholder={placeholder}
+      />
+      <div>{source ? <img className={icon} src={source} alt="" /> : ""}</div>
     </div>
   );
 };

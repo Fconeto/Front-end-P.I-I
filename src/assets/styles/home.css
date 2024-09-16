@@ -6,7 +6,7 @@
   background-color: #FFFACD;
 }
 
-.lat_nav > button{
+.button_sair{
   background-color: #D00000;
 }
 
@@ -20,7 +20,6 @@
   padding: 100px;
   border-right: 4px solid #E7DEDE;
   background-color: #ffffff;
-
 }
 
 .icon_button {
@@ -47,6 +46,16 @@
   flex-direction: column;
   align-items: center;
   margin: 10px 0 20px 0;
+}
+
+.lat_nav > * {
+  transform: translateY(-25%);
+}
+
+.lat_nav > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .lat_nav > section > img {
@@ -108,4 +117,9 @@
   max-width: calc(700px + 30vw);
   height: 100vh;
   padding: 5vh 50px 50px 50px;
+}
+
+.button_evento {
+  background-color: #F4BD51;
+  margin-bottom: 10px;
 }

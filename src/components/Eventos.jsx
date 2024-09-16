@@ -1,18 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import "../assets/styles/home.css";
 import Card from "../components/Card";
-import SemEventos from "../components/SemEventos";
+import Modal from "../components/Modal";
 
 const Eventos = () => {
+  const [modalAtivo, setModalAtivo] = useState(false);
+
   return (
     <>
-      <h1>Meus eventos</h1>
-      <SemEventos />
       <div className="cards">
-        <Card source="/src/assets/images/imagem 1.png" />
-        <Card source="/src/assets/images/imagem 2.png" />
-        <Card source="/src/assets/images/imagem 3.png" />
+        <Card
+          setModalAtivo={setModalAtivo}
+          source="/src/assets/images/imagem 1.png"
+        />
+        <Card
+          setModalAtivo={setModalAtivo}
+          source="/src/assets/images/imagem 2.png"
+        />
+        <Card
+          setModalAtivo={setModalAtivo}
+          source="/src/assets/images/imagem 3.png"
+        />
       </div>
+      <Modal modalAtivo={modalAtivo} setModalAtivo={setModalAtivo} />
     </>
   );
 };

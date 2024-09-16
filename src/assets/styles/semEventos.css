@@ -1,5 +1,5 @@
 
-div {
+.sem_eventos {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -8,6 +8,6 @@ div {
     justify-content: center;
 }
 
-img {
+.sem_eventos > img {
   height: 180px;
 }
